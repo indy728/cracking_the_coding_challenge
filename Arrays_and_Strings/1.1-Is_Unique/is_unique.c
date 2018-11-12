@@ -13,17 +13,17 @@
 char    is_unique(char *str)
 {
     char arr[127-32] = {0};
-        int i = -1;
-        char x;
+    int i = -1;
+    char x;
 
-        while(str[++i])
-        {
-            x = str[i] - 32;
-            arr[x]++;
-            if (arr[x] > 1)
-                return 1;
-        }
-        return 0;
+    while(str[++i])
+    {
+        x = str[i] - 32;
+        arr[x]++;
+        if (arr[x] > 1)
+            return 1;
+    }
+    return 0;
 }
 
 int main(int ac, char **av)
